@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+    --co1: #00244b;
+    --co2: #003d80;
+    --co3: #074470;
+    --co4: #01306e;
+    --co5: #0056b3;
+    --co6: #274a70;
+    --co7: #2777ce;
+    --co8: #539ff0;
+    --co9: #0059ff;
+    --co10: #07488d;
+    --co11: #003d7a;
+    --co12: #132154;
+    --co13: #324363;
+    --co14: #003cfc;
+    --co15: #ddd;
+    --co16: #d1d1d1;
+    --co17: #fff;
+    --co18: #000;
+    --co19: #333;
+    --co20: #0c382e;
+    --co21: #145413;
+    --co22: #541313;
+    --co24: #135545;
+    --co25: #ffe600;
+    --co24: #148799;
+}
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--co1);
+    padding: 20px 30px;
+    border-bottom: 2px solid var(--co23);
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--co1);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--co2);
+}
+
+
+h2 {
+    margin: 20px 0;
+    color: var(--co10);
+    text-align: left;
+}
+
+.row {
+    margin-left: 0; 
+    margin-right: 0; }
+
+.card {
+    background-color: var(--co3);
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; 
+}
+
+.card:hover {
+    transform: translateY(-5px); }
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem; 
+    color: var(--co18); 
+}
+
+.card-text {
+    color: var(--co18); 
+    margin: 5px 0; 
+}
+
+.table {
+    width: 80%; 
+    border-collapse: collapse;
+    margin: 16px;
+    margin-left: auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--co23);
+}
+
+th {
+    background-color: var(--co2);
+    color: var(--co18);
+}
+
+button {
+    background-color: var(--co5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--co6);
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.overview-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin-left: 300px;
+    background-color: var(--co3);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px; 
+    text-align: center;
+}
+
+.reports h2 {
+    color: var(--co10);
+    text-align: left;
+}
+
+.reports table {
+    width: 98%; 
+    border-collapse: collapse;
+    margin: 14px;
+}
+
+.reports th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--co23);
+}
+
+.reports th {
+    background-color: var(--co2);
+    color: #fff;
+}
